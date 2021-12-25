@@ -14,9 +14,7 @@ type MessageRequest = {
   message: string
 };
 
-app.get('/', (_req : express.Request, res : express.Response) => {
-  res.sendFile(__dirname + '/index.html');
-});
+app.use(express.static('frontend'));
 
 io.on('connection', (socket : socketio.Socket) => {
   console.log('a user has connected');
