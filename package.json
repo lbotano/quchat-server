@@ -4,7 +4,8 @@
   "description": "Quchat server",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon ./index.ts"
+    "start": "ts-node ./index.ts",
+    "dev": "nodemon ./index.ts"
   },
   "author": "Lautaro Bernabé Otaño <otanolautarob@gmail.com>",
   "license": "GPL-3.0-or-later",
