@@ -4,7 +4,7 @@ Quchat is a simple chat application
 
 # License
 
-This software is distributed under the GPLv3 license
+This software is distributed under the AGPLv3 license
 
 # How to install
 
