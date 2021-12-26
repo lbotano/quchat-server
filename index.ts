@@ -14,6 +14,8 @@ type MessageRequest = {
   message: string
 };
 
+const PORT = process.env.PORT || 80;
+
 app.use(express.static('frontend'));
 
 io.on('connection', (socket : socketio.Socket) => {
@@ -42,6 +44,6 @@ io.on('connection', (socket : socketio.Socket) => {
   });
 });
 
-server.listen(process.env.PORT, () => {
-  console.log(`listening on *:${process.env.PORT}`);
+server.listen(PORT, () => {
+  console.log(`listening on *:${PORT}`);
 });
