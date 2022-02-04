@@ -54,3 +54,8 @@ io.on('connection', (socket: socketio.Socket) => {
 server.listen(PORT, () => {
   console.log(`listening on *:${PORT}`);
 });
+
+export {
+  server,
+  app
+};
